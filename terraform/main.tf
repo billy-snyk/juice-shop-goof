@@ -5,7 +5,7 @@ provider "aws" {
 }
 
 # locals {
-#   name   = "juice-shop-cluster"
+#   name   = "jsg-insights-cluster"
 #   region = "us-east-1"
 
 #   vpc_cidr = "10.123.0.0/16"

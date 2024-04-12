@@ -41,7 +41,7 @@ Create Snyk Service Acount with minimum scope: [docs](https://docs.snyk.io/manag
 Log into AWS CLI:
 ```
 aws configure
-aws eks update-kubeconfig --region us-east-1 --name juice-shop-cluster
+aws eks update-kubeconfig --region us-east-1 --name jsg-insights-cluster
 ```
 
 Add the secret
@@ -59,7 +59,7 @@ Install the chart
 ```
 helm install insights \
 	--set "secretName=insights-secret" \
-	--set "config.clusterName=juice-shop-cluster" \
+	--set "config.clusterName=jsg-insights-cluster" \
 	--set "config.routes[0].organizationID=YOUR_ORG_ID" \
 	--set "config.routes[0].clusterScopedResources=true" \
 	--set "config.routes[0].namespaces[0]=*"  \
