@@ -1,7 +1,7 @@
 variable "name" {
     type = string
     description = "name of cluster"
-    default = "jsg-insights-cluster"
+    default = "jsg-cluster"
 }
 
 variable "region" {
